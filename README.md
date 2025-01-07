@@ -51,11 +51,22 @@ O KWIC recebe uma lista de títulos ou frases e gera uma lista alfabetizada de t
 
 **Entrada:**
 
-The quick brown fox A brown cat sat The cat is brown
+```
+The quick brown fox
+A brown cat sat
+The cat is brown
+```
 
 **Saída:**
-
-brown cat sat A          (from "A brown cat sat") brown fox The quick      (from "The quick brown fox") brown is The cat         (from "The cat is brown") cat is brown The         (from "The cat is brown") cat sat A brown          (from "A brown cat sat") fox The quick brown      (from "The quick brown fox") quick brown fox The      (from "The quick brown fox")
+```
+brown cat sat A          (from "A brown cat sat")
+brown fox The quick      (from "The quick brown fox")
+brown is The cat         (from "The cat is brown")
+cat is brown The         (from "The cat is brown")
+cat sat A brown          (from "A brown cat sat")
+fox The quick brown      (from "The quick brown fox")
+quick brown fox The      (from "The quick brown fox")
+```
 
 **Extensões Opcionais:**
 
