@@ -13,7 +13,7 @@ def test_create_chunks():
     lines = reader.reader(path(1))
     assert reader.create_chunks(lines) == [['linha1', 'linha2'], ['linha3']]
 
-def test_crate_chunks2():
+def test_create_chunks2():
     lines = reader.reader(path(2))
     assert reader.create_chunks(lines) == [['linha1', 'linha2'], ['linha3', 'linha4'], ['linha5']]
 

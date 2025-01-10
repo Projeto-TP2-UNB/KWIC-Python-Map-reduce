@@ -61,8 +61,8 @@ The cat is brown
 ```
 brown cat sat A          (from "A brown cat sat")
 brown fox The quick      (from "The quick brown fox")
-brown is The cat         (from "The cat is brown")
 cat is brown The         (from "The cat is brown")
+brown The cat is         (from "The cat is brown")
 cat sat A brown          (from "A brown cat sat")
 fox The quick brown      (from "The quick brown fox")
 quick brown fox The      (from "The quick brown fox")
@@ -74,3 +74,19 @@ quick brown fox The      (from "The quick brown fox")
 - Implementar diferentes opções de ordenação (por exemplo, sensível a maiúsculas e minúsculas vs. insensível a maiúsculas e minúsculas).
 - Permitir que os usuários especifiquem o tamanho da janela de contexto ao redor da palavra-chave.
 - Criar uma interface gráfica do usuário (GUI) para o programa.
+
+## Instalação
+Crie um ambiente virtual e instale o Poetry
+```bash
+python3 -m venv $VENV_PATH
+$VENV_PATH/bin/pip install -U pip setuptools
+$VENV_PATH/bin/pip install poetry
+```
+Clone o projeto e execute:
+```bash
+poetry install
+```
+Para testar o projeto, execute:
+```bash
+poetry run pytest -v
+```
