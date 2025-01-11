@@ -27,6 +27,11 @@ def test_init_chunks_happy_path():
     reader.INPUT_PATH = path(1)
     assert reader.init_chunks() == [['linha1', 'linha2'], ['linha3']]
 
+
+def test_init_chunks_example():
+    reader.INPUT_PATH = path(4)
+    assert reader.init_chunks() == [['The quick brown fox', 'A brown cat sat'], ['The cat is brown']]
+
 def test_init_stop_words_sad_path():
     reader.STOP_WORDS_PATH = path(3)
     with pytest.raises(ValueError) as excinfo:
@@ -36,3 +41,5 @@ def test_init_stop_words_sad_path():
 def test_init_stop_words_happy_path():
     reader.STOP_WORDS_PATH = path(1)
     assert reader.init_stop_words() == ['linha1', 'linha2', 'linha3']
+
+  

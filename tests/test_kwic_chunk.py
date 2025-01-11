@@ -14,7 +14,7 @@ def test_kwic_chunk():
 def test_kwic_chunk_example():
     stop_words = ["the", "is", "sat","a"]
     lines = reader.reader(path(4))
-    assert kwic.kwic_chunk(lines,stop_words ) == [
+    assert kwic.kwic_chunk(stop_words,lines ) == [
         ('brown','brown cat sat A' ,'A brown cat sat'),
         ('brown','brown fox The quick' ,'The quick brown fox'),
         ('brown','brown The cat is' ,'The cat is brown'),
