@@ -22,10 +22,6 @@ def kwic_line(stop_words,line)->list[tuple[str,str,str]]:
 def kwic_chunk(stop_words,chunk)->list[tuple[str,str,str]]:
     return sorted(chain.from_iterable(kwic_line(stop_words,line) for line in chunk),key=lambda x: (x[0].lower(), x[1].lower()))
 
-
-stop_words = ["stop", "words", "personalizado"]
-print(kwic_line(stop_words,"Stop, WORDS, PERSONALIZADO, A o e i u"))
-
 def kwic_threads(stop_words, chunks):
     kwic_chunk_partial = partial(kwic_chunk,stop_words)
     results = []
