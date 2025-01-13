@@ -7,7 +7,7 @@ def main():
 
     contextos = kwic.kwic_threads(stop_words, chunks)
     for palavra, contexto, origem in contextos:
-        print(f'{palavra} - {contexto} - {origem}')
+        print(f'{contexto} (from "{origem}")')
 
 if __name__ == '__main__':
     main()
