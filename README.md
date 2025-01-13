@@ -90,3 +90,7 @@ Para testar o projeto, execute:
 ```bash
 poetry run pytest -v
 ```
+Para iniciar o projeto, execute:
+```bash
+poetry run python src/__main__.py
+```
